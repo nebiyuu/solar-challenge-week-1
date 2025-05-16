@@ -1,0 +1,11 @@
+name: Basic CI
+on: [push] 
+jobs:
+  install-deps:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4  po
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13.3"  
+      - run: pip install -r requirements.txt  

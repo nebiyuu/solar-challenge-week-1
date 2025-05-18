@@ -1,0 +1,37 @@
+- Data received:
+    - Dimensions: (rows, columns) = (525600, 19)
+       identified by  df.shape      
+    - Columns include:
+        - 'Timestamp'
+        - 'GHI'
+        - 'DNI'
+        - 'DHI'
+        - 'ModA'
+        - 'ModB'
+        - 'Tamb'
+        - 'RH'
+        - 'WS'
+        - 'WSgust'
+        - 'WSstdev'
+        - 'WD'
+        - 'WDstdev'
+        - 'BP'
+        - 'Cleaning'
+        - 'Precipitation'
+        - 'TModA'
+        - 'TModB'
+        - 'Comments'
+        -  Columns identified using: `df.columns.tolist()`
+
+- Missing data:
+    - 525600 missing(0 non-null) 'Comments' (100%) 
+    -identified by df.info 
+-checked for duplicated data  
+    -but found non
+    -identified by df.duplicates()
+-converted Timestamp from object to datetime64[ns]
+    -converted by df['Timestamp'] = pd.to_datetime(df['Timestamp'])
+
+   
+        
+

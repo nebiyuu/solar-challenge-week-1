@@ -24,13 +24,16 @@
         -  Columns identified using: `df.columns.tolist()`
 
 - Missing data:
-    - 525600 missing(0 non-null) 'Comments' (100%) 
+    - 525600 missing(0 non-null)of column 'Comments' (100%) 
     -identified by df.info 
 -checked for duplicated data  
     -but found non
     -identified by df.duplicates()
 -converted Timestamp from object to datetime64[ns]
     -converted by df['Timestamp'] = pd.to_datetime(df['Timestamp'])
+-updated Negative values for GHI', 'DNI', 'DHI to zero the closest possible value
+    - used df[['GHI', 'DNI', 'DHI']] = df[['GHI', 'DNI', 'DHI']].clip(lower=0) to update them to 0
+ 
 
    
         

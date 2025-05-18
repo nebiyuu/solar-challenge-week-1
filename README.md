@@ -6,7 +6,7 @@ cd solar-challenge-week1
 **Set Up a Python Virtual Environment**
 Using venv (Built-in)
 ```
-python -m venv venv          # Create virtual environment
+python -m venv venv3          # Create virtual environment
 source venv/bin/activate    # Activate (Linux/Mac)
 venv\Scripts\activate      # Activate (Windows)
 ```
